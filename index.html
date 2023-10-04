@@ -19,16 +19,26 @@
                 <button id="btnNuevoJuego" class="btn btn-danger">
                     Nuevo Juego
                 </button>
-                <button id="btnPedirCarta" class="btn btn-primary">
+                <button
+                    id="btnPedirCarta"
+                    disabled="disabled"
+                    class="btn btn-primary"
+                >
                     Pedir Carta
                 </button>
-                <button id="btnDetener" class="btn btn-primary">Detener</button>
+                <button
+                    id="btnDetener"
+                    disabled="disabled"
+                    class="btn btn-primary"
+                >
+                    Detener
+                </button>
             </div>
         </div>
         <div class="row container">
             <div class="col">
                 <h1>Jugador 1 - <small>0</small></h1>
-                <div id="jugador-cartas">
+                <div id="jugador-cartas" class="divCartas">
                     <!-- <img class="carta" src="assets/cartas/2C.png" alt="" /> -->
                 </div>
             </div>
@@ -36,7 +46,7 @@
         <div class="row container">
             <div class="col">
                 <h1>Computadora - <small>0</small></h1>
-                <div id="computadora-cartas">
+                <div id="computadora-cartas" class="divCartas">
                     <!-- <img class="carta" src="assets/cartas/3C.png" alt="" /> -->
                 </div>
             </div>
@@ -44,5 +54,8 @@
 
         <script src="assets/js/underscore-umd-min.js"></script>
         <script src="assets/js/juego.js"></script>
+        <!-- <script>
+            moduloBlackJack.nuevoJuego();
+        </script> -->
     </body>
 </html>
