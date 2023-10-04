@@ -8,14 +8,10 @@
 const moduloBlackJack = (() => {
     'use strict';
 
-    let deck = [];
+    let deck = [],
+        puntosJugadores = [];
     const tipos = ['C', 'D', 'H', 'S'],
         especiales = ['A', 'J', 'Q', 'K'];
-
-    // let puntosJugador = 0,
-    //     puntosComputadora = 0;
-
-    let puntosJugadores = [];
 
     //Referencias al HTML
     const btnNuevoJuego = document.querySelector('#btnNuevoJuego'),
